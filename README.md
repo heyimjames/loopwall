@@ -1,10 +1,20 @@
 # Loopwall
 
+[![Download for macOS](https://img.shields.io/badge/Download-Loopwall.dmg-black?style=for-the-badge&logo=apple)](https://github.com/heyimjames/loopwall/releases/latest/download/Loopwall.dmg)
+[![Star this repo](https://img.shields.io/github/stars/heyimjames/loopwall?style=for-the-badge&label=Star&color=f5c518)](https://github.com/heyimjames/loopwall)
+
+[![Release](https://img.shields.io/github/v/release/heyimjames/loopwall?label=release)](https://github.com/heyimjames/loopwall/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/heyimjames/loopwall/total?color=success)](https://github.com/heyimjames/loopwall/releases/latest)
+![Platform](https://img.shields.io/badge/platform-macOS%2015%2B-lightgrey)
+![Swift](https://img.shields.io/badge/swift-5-orange)
+
 A small menu-bar app that plays an MP4 or GIF as your macOS wallpaper, on the
 laptop screen and every external display. It compresses what you give it, so a
 25 MB clip or a fat "HD GIF" turns into a couple of megabytes of HEVC.
 
 Requires macOS 15+. No dependencies, no helper processes, no ffmpeg.
+
+<img src=".github/assets/main-window.png" alt="Loopwall's library window, showing a wallpaper applied to the built-in display" width="720">
 
 ## Using it
 
