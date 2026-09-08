@@ -22,6 +22,12 @@
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>LSUIElement</key>
 	<true/>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.utilities</string>
+	<key>SUFeedURL</key>
+	<string>https://raw.githubusercontent.com/heyimjames/loopwall/main/appcast.xml</string>
+	<key>SUPublicEDKey</key>
+	<string>SiMdNj3JIEq0jnqvshOkOV6E3Zb3PIu62jMAAl8gheA=</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>

@@ -1,5 +1,6 @@
 import SwiftUI
 import AppKit
+import Sparkle
 
 @main
 struct LoopwallApp: App {
@@ -20,6 +21,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
     static private(set) var shared: AppDelegate?
 
     let state = AppState()
+    let updaterController = SPUStandardUpdaterController(
+        startingUpdater: true, updaterDelegate: nil, userDriverDelegate: nil
+    )
     private var mainWindowController: MainWindowController?
 
     func applicationDidFinishLaunching(_ notification: Notification) {

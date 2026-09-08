@@ -19,6 +19,11 @@ settings:
     ALWAYS_SEARCH_USER_PATHS: "NO"
     COMBINE_HIDPI_IMAGES: "YES"
 
+packages:
+  Sparkle:
+    url: https://github.com/sparkle-project/Sparkle
+    from: 2.9.6
+
 targets:
   Loopwall:
     type: application
@@ -44,3 +49,4 @@ targets:
       - sdk: ServiceManagement.framework
       - sdk: IOKit.framework
       - sdk: UniformTypeIdentifiers.framework
+      - package: Sparkle

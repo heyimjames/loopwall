@@ -38,6 +38,12 @@ struct MenuBarContent: View {
 
         Divider()
 
+        Button("Check for Updates…") {
+            AppDelegate.shared?.updaterController.checkForUpdates(nil)
+        }
+
+        Divider()
+
         Button("Quit Loopwall") { NSApplication.shared.terminate(nil) }
             .keyboardShortcut("q")
     }

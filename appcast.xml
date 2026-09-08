@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Loopwall</title>
+    <link>https://raw.githubusercontent.com/heyimjames/loopwall/main/appcast.xml</link>
+    <description>Loopwall release notes</description>
+    <language>en</language>
+    <item>
+      <title>Version 1.0</title>
+      <pubDate>Tue, 08 Sep 2026 10:10:30 +0000</pubDate>
+      <sparkle:version>1</sparkle:version>
+      <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <enclosure
+        url="https://github.com/heyimjames/loopwall/releases/download/v1.0.0/Loopwall.dmg"
+        sparkle:edSignature="8fWkHTO2ptUHDVTRveiRpf4YZrP1JvYaF7W6uH8AF7sSq+UHEpyPYr+t4i9iOeTA/WGDJQn2nMe15DpsNF9nAQ=="
+        length="11397885"
+        type="application/octet-stream" />
+    </item>
+  </channel>
+</rss>

@@ -135,3 +135,27 @@ spctl -a -vvv -t install build/Loopwall.dmg
 
 `dist.sh` is entirely separate from `build.sh` and never touches `project.yml`'s
 local signing config, so day-to-day development stays ad-hoc and fast.
+
+## Releases & auto-updates
+
+Loopwall checks for updates via [Sparkle](https://sparkle-project.org),
+reading `appcast.xml` (raw-served from `main` on GitHub) and downloading new
+versions from GitHub Releases. Users can also trigger a check manually from
+the menu bar (**Check for Updates…**).
+
+To cut a new release:
+
+```sh
+./release.sh 1.1 2   # <marketing-version> <build-number>
+```
+
+This bumps `project.yml`, runs `dist.sh` (build → notarize → DMG), signs the
+DMG with the Sparkle EdDSA key (`tools/sparkle/sign_update`), prepends an
+entry to `appcast.xml`, then tags, pushes, and publishes a GitHub Release with
+the DMG attached. Existing installs pick up the update automatically within
+a day, or immediately via the manual check.
+
+The Sparkle private signing key lives only in this machine's Keychain (never
+in the repo); `tools/sparkle/` just holds the small `generate_keys` /
+`sign_update` / `generate_appcast` CLI binaries so `release.sh` doesn't depend
+on a local Sparkle checkout existing at a particular path.
